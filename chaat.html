@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Ali Mahmud</title>
+    <style>
+        body {
+            background-color:#ffeb3b ;
+        }
+        .kotak {
+            border :10px solid #2196f3 ;
+            width: 600px;
+            height: 300px;
+        }
+        .pojokkanan {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+    <script>
+        function kirimpesan() {
+            let isipesan = document.getElementById ("isipesan").value;
+            document.getElementById("kotak").innerHTML += isipesan + "<br />"
+        }
+    </script>
+</head>
+<body>
+    <div class="pojokkanan">
+        <div class="kotak" id="kotak">
+        </div>
+        <input type="text" id="isipesan">
+        <input type="submit" value="kirim" onclick="kirimpesan ()">
+     </div>
+</body>
+</html>
